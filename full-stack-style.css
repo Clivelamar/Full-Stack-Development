@@ -1,7 +1,4 @@
-html{
 
-    font-family: "Times New Roman", serif, sans-serif;
-}
 body {
     /* background-image:url(zebra.jpg) ;
     background-repeat: no-repeat;
@@ -12,19 +9,29 @@ body {
 
 
 
-h1, h2, h3, .class, #id{
+h1{
     color: #ffffff;
-    line-height: 1rem;
-    font-family: sans-serif;
-    font-style: italic;
+    line-height: 2rem;
+    font-family: 'Handlee',serif,sans-serif;
+    
 }
-
-
 
 h2{
-    font-size: 30px;
-    font-style: normal;
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Quicksand',serif,sans-serif;
+    
 }
+
+h3{
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Roboto',serif,sans-serif;
+    
+}
+
+
+
 
 .formatting {
     font-size: 25px;
