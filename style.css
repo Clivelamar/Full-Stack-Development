@@ -10,6 +10,13 @@
         line-height: 1;
         margin: 0;
     }
+    
+    .container {
+        width: 100%;
+        margin: auto;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
     /*############# NavBar ##########*/
     
     nav {
@@ -48,12 +55,46 @@
         color: #fff;
     }
     
-    ul.topnav li.dropdownicon {
+    ul.topnav li.dropdownIcon {
         display: none;
+        /*############# Custom Styles##########*/
+        background: #076DFF;
+        /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(#076DFF, #65a5ff);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#076DFF, #65a5ff);
+        /*For Firefox 3.6 to 15 */
+        background: linear-gradient(#076DFF, #65a5ff);
+        /* Standard syntax */
     }
     /*############# Mobile ##########*/
     
-    @media screen and (max-width: 680px) {
+    @media screen and (max-width:680px) {
+        ul.topnav li:not(:nth-child(1)) {
+            display: none;
+        }
+        ul.topnav li.dropdownIcon {
+            display: block;
+            float: right;
+        }
+        ul.topnav.responsive li.dropdownIcon {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        ul.topnav.responsive {
+            position: relative;
+        }
+        ul.topnav.responsive li {
+            display: inline;
+            float: none;
+        }
+        ul.topnav.responsive li a {
+            display: block;
+            text-align: left;
+        }
+    }
+    /* @media screen and (max-width: 680px) {
         ul.topnav li:not(:nth-child(1)) {
             display: none;
         }
@@ -72,4 +113,4 @@
             display: block;
             text-align: left;
         }
-    }
+    } */
